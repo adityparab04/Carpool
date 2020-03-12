@@ -1,0 +1,22 @@
+<ion-content>
+  <div class="container">
+    <form class="form-container" [formGroup]="driverRegisterForm" (ngSubmit)="submit()">
+      <div class="text">
+        <h1>Register</h1>
+        <p>as driver</p>
+      </div>
+      <input type="text" name="username" class="input" placeholder="Username" formControlName="username">
+      <input type="text" name="name" class="input" placeholder="Full Name" formControlName="name">
+      <input type="password" name="password" class="input" placeholder="Password" formControlName="password">
+      <div class="mobileno"><span>+91</span><input type="text" name="mobileno" class="input mobile" placeholder="Mobile No." formControlName="mobile_no"></div>
+      <select name="vehicle" class="input vehicle" formControlName="vehicle_type">
+        <option value="bike">Bike</option>
+        <option value="car">Car</option>
+      </select>
+      <input type="text" name="license" class="input license" placeholder="License No." formControlName="license_no">
+      <ion-button fill="outline" class="btn" color="secondary" type="submit">Submit</ion-button>
+    </form>
+    <p>Already Registered? <a [routerLink]="['']" routerLinkActive="router-link-active" class="gobtn">Login</a></p>
+  </div>
+</ion-content>
+  

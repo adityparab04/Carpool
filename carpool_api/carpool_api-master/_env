@@ -1,0 +1,4 @@
+PORT=3000
+DB_USR=prajwal
+DB_PASS=prajwal1234
+JWT_KEY=ourcarpoolapp

@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  background: #9aeff4;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(black, 0.3);
+    width: 350px;
+    height: fit-content;
+
+    p {
+      margin: 0 0 5px 0;
+      font-size: 0.9rem;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}

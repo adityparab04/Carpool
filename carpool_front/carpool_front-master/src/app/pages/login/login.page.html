@@ -1,0 +1,12 @@
+<ion-content>
+  <div class="container">
+    <form class="form-container" [formGroup]="loginForm" (ngSubmit)="submit()">
+      <h1>LogIn</h1>
+      <p>{{message}}</p>
+      <input type="text" name="username" class="input" placeholder="Username" formControlName="username">
+      <input type="password" name="password" class="input" placeholder="Password" formControlName="password">
+      <ion-button fill="outline" class="btn" color="secondary" type="submit">Submit</ion-button>
+    </form>
+    <p>Not yet registerd? <a [routerLink]="['/register']" routerLinkActive="router-link-active" class="gobtn">Register</a></p>
+  </div>
+</ion-content>

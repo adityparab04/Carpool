@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background: #9aeff4;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+
+  .content {
+    background: white;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 0 50px rgba(black, 0.3);    
+
+    h1 {
+      font-size: 3rem;
+      color: black;
+      margin: 0;
+      padding: 0 0 5px 0;
+    }
+    
+    p {
+      margin: 0 0 20px 5px;
+      color: gray;
+    }
+
+    .buttons {
+
+      .select {
+        padding: 10px 60px;
+        background: white;
+        font-size: 1.5rem;
+        margin: 30px 0;
+        box-shadow: 0 0 10px rgba(gray, 0.5);
+        text-align: center;
+        border-radius: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div *ngIf="showDriver">Create Ride</div>
+      <div *ngIf="showPassenger">Request Ride</div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <app-create-ride *ngIf="showDriver"></app-create-ride>
+ <app-request-ride *ngIf="showPassenger"></app-request-ride>
+</ion-content>

@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="profile">
+    <div *ngIf="passenger">
+      <p><span>Username: </span>{{passenger.username}}</p>
+      <p><span>Name: </span>{{passenger.name}}</p>
+      <p><span>Mobile No. : </span>{{passenger.mobile_no}}</p>
+    </div>
+  </div>
+  <div class="requestedRide" *ngIf="showrequestRide">
+    <h1>Your Requested Ride</h1>
+    <div *ngIf="requestedRide">
+      <div class="body">
+          <p><span>Source: </span>{{requestedRide.source}}</p>
+          <p><span>Destination: </span>{{requestedRide.destination}}</p>
+          <p><span>Fare: </span>{{requestedRide.fare}}</p>
+          <p><span>Timing: </span>{{requestedRide.timing}}</p>
+        </div>
+    </div>
+    <ion-button fill="outline" color="danger" (click)="deleteRequestedRide(requestedRide.request_ride_id)">Delete Ride</ion-button>
+  </div>
+  <div [class.ride]="showButton">
+    <div *ngIf="showButton">
+      <p>You have not created or accepted ride</p>
+      <ion-button fill="outline">
+        <a [routerLink]="['/home/tabs/tab3']" routerLinkActive="router-link-active" >Request Ride</a>
+      </ion-button>
+      <ion-button fill="outline">
+        <a [routerLink]="['/home/tabs/tab2']" routerLinkActive="router-link-active" >Accept Ride</a>
+      </ion-button>
+    </div>
+  </div>
+  <div class="acceptedRide" *ngIf="showaccepteRide">
+    <h1>Your Accepted Ride</h1>
+    <div class="body">
+      <div>
+        <p><span>Name of Driver: </span>{{acceptedRide.driver_name}}</p>
+        <p><span>Mobile No of Driver: </span>{{acceptedRide.driver_mobile_no}}</p>
+        <p><span>Source: </span>{{acceptedRide.source}}</p>
+        <p><span>Destination: </span>{{acceptedRide.destination}}</p>
+        <p><span>Fare: </span>{{acceptedRide.fare}}</p>
+        <p><span>Timing: </span>{{acceptedRide.timing}}</p>
+      </div>
+    </div>
+    <ion-button fill="outline" color="danger" (click)="deleteAccepRide(acceptedRide.accept_ride_id)">Delete Ride</ion-button>      
+    <ion-button fill="outline" color="success" (click)="contact(8879572257)">
+      <!-- <a href="https://api.whatsapp.com/send?phone=918879572257" (onclick)="contact()">Contact</a> -->
+      Contact
+    </ion-button>
+  </div>
+  <div class="logoutButton">
+    <ion-button (click)="submit()">Logout</ion-button>
+  </div>
+</div>
+

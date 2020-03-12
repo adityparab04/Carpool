@@ -1,0 +1,21 @@
+<ion-content>
+  <div class="container" *ngIf="showForm">
+    <form class="form-container" [formGroup]="CreateRideForm" (ngSubmit)="submit()">
+      <div class="text">
+        <h1>Create Ride</h1>
+      </div>
+      <input type="text" name="source" class="input" placeholder="source" formControlName="source">
+      <input type="text" name="destination" class="input" placeholder="destination" formControlName="destination">
+      <input type="text" name="timing" class="input" placeholder="timing" formControlName="timing">
+      <input type="text" name="fare" class="input" placeholder="fare" formControlName="fare">
+      <input type="text" name="available_seats" class="input" placeholder="availabe seats" formControlName="available_seats">
+      <ion-button fill="outline" class="btn" color="secondary" type="submit">Submit</ion-button>
+    </form>
+  </div>
+  <div class="container" *ngIf="!showForm">
+    <form class="form-container">
+      <p>You have already created or accepted ride</p>
+    </form>
+  </div>
+</ion-content>
+      

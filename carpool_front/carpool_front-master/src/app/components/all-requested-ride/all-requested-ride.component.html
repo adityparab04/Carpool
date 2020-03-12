@@ -1,0 +1,15 @@
+<div class="container" *ngIf="show">
+  <div class="card" *ngFor="let r of requestedRide">
+    <p><span>Source:</span> {{r.source}}</p>
+    <p><span>Destination:</span> {{r.destination}}</p>
+    <p><span>Requested by:</span> {{r.requested_by}}</p>
+    <p><span>Fare:</span> {{r.fare}}</p>
+    <p><span>Timing:</span> {{r.timing}}</p>
+    <ion-button fill="outline" (click)="acceptRide(r.request_ride_id)">Accept</ion-button>
+  </div>
+</div>
+<div class="container" *ngIf="!show">
+  <div class="card">
+    <p>You have already accepted one Ride.</p>
+  </div>
+</div>

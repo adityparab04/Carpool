@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Search
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-all-requested-ride *ngIf="showDriver"></app-all-requested-ride>
+  <app-all-created-ride *ngIf="showPassenger"></app-all-created-ride>
+</ion-content>

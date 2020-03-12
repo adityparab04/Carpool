@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #9aeff4;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+
+  .profile {
+    width: 80vw;
+    background: white;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(black, 0.3);
+
+    p {
+      font-size: 1rem;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .cretedRide {
+    width: 80vw;
+    background: white;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(black, 0.3);
+    margin-top: 20px;
+
+    p {
+      font-size: 1rem;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      color: gray;
+      padding-bottom: 10px;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .ride {
+    display: flex;
+    width: 80vw;
+    align-items: flex-start;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(black, 0.3);
+    margin-top: 20px;
+    padding: 30px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .acceptedRide {
+    width: 80vw;
+    background: white;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(black, 0.3);
+    margin-top: 20px;
+
+    p {
+      font-size: 1rem;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      color: gray;
+      padding-bottom: 10px;
+    }
+
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .logoutButton {
+    width: 80vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 30px 0;
+  }
+}
